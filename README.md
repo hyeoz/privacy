@@ -53,17 +53,17 @@
 
 ## 운영자 정보
 
-현재 값은 운영자 **이혜원**, 문의 **official.hyeoz@gmail.com** 이며 모든 페이지 하단(및 일부 페이지의 `<title>`)에 들어 있습니다. 한 번에 바꾸려면:
+현재 값은 운영자 **HyeWon Lee**, 문의 **official.hyeoz@gmail.com** 이며 모든 페이지 하단(및 일부 페이지의 `<title>`)에 들어 있습니다. 한 번에 바꾸려면:
 
 ```bash
 find . -name '*.html' -exec sed -i '' \
-  -e 's/이혜원/새 이름/g' \
+  -e 's/HyeWon Lee/새 이름/g' \
   -e 's/official\.hyeoz@gmail\.com/새 이메일/g' {} +
 ```
 
 (macOS 기준입니다. Linux에서는 `sed -i` 뒤의 `''`를 빼십시오.)
 
-App Store Connect의 개발자 표시 이름은 `HyeWon Lee`입니다. 방침의 운영자명과 표기가 다르면 심사에서 동일인 확인을 요청받을 수 있으므로, 한쪽을 바꿀 때 다른 쪽도 함께 검토하십시오.
+이 표기는 App Store Connect의 개발자 표시 이름 `HyeWon Lee`와 의도적으로 일치시킨 것입니다. 한쪽을 바꾸면 다른 쪽도 함께 바꾸십시오. 표기가 갈리면 심사에서 동일인 확인을 요청받을 수 있습니다.
 
 ## 방침을 수정할 때
 
