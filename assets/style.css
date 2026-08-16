@@ -1,0 +1,251 @@
+/* 공통 스타일 — 모든 개인정보처리방침·지원 페이지가 함께 사용합니다. */
+
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f6f7f9;
+  --fg: #1a1d21;
+  --fg-muted: #5c6570;
+  --border: #e3e6ea;
+  --accent: #2f6fd0;
+  --accent-soft: #eaf1fc;
+  --radius: 12px;
+  --maxw: 44rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --bg-subtle: #1c2024;
+    --fg: #e8eaed;
+    --fg-muted: #9aa4af;
+    --border: #2b3137;
+    --accent: #7fb0ff;
+    --accent-soft: #1e2735;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+    "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+/* 상단 */
+
+header.page {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+header.page h1 {
+  font-size: 1.75rem;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+header.page .lede {
+  margin: 0;
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+}
+
+.breadcrumb {
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+  margin: 0 0 1.25rem;
+}
+
+.breadcrumb a {
+  color: var(--fg-muted);
+}
+
+/* 본문 */
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  margin: 0 0 1rem;
+  padding-left: 1.35rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+code {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.1em 0.4em;
+  font-size: 0.875em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* 요약 박스 */
+
+.callout {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin: 0 0 2rem;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.callout .label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 0.4rem;
+}
+
+/* 표 */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.5rem;
+  font-size: 0.925rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  font-weight: 600;
+  background: var(--bg-subtle);
+  white-space: nowrap;
+}
+
+/* 서비스 카드 목록 (랜딩) */
+
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.cards li {
+  margin: 0;
+}
+
+.cards a {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.cards a:hover {
+  border-color: var(--accent);
+  background: var(--bg-subtle);
+}
+
+.cards .name {
+  display: block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.cards .desc {
+  display: block;
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.cards .badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--fg-muted);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  margin-left: 0.4rem;
+  vertical-align: 0.12em;
+}
+
+/* 하단 */
+
+footer.page {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--fg-muted);
+  font-size: 0.875rem;
+}
+
+footer.page p {
+  margin: 0 0 0.35rem;
+}
+
+.meta {
+  color: var(--fg-muted);
+  font-size: 0.875rem;
+}
