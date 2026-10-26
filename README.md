@@ -13,6 +13,7 @@
 ├── wedding-peach-camera/index.html  웨피캠
 ├── vitamango/index.html          비타망고 (준비 중)
 ├── tororo/index.html             토로로
+├── sobok/index.html              소복
 └── .nojekyll                     Jekyll 빌드 비활성화
 ```
 
@@ -28,6 +29,7 @@
 | 웨피캠 | `https://<username>.github.io/privacy/wedding-peach-camera/` |
 | 비타망고 | `https://<username>.github.io/privacy/vitamango/` |
 | 토로로 | `https://<username>.github.io/privacy/tororo/` |
+| 소복 | `https://<username>.github.io/privacy/sobok/` |
 
 ## 최초 설정
 
